@@ -18,7 +18,7 @@ async function Home() {
     const slugUrl = header_url.replace('/play/', '')
 
     let data = await getData(slugUrl);
-   
+
     return (
         <main className=" container">
             <a className="flex flex-1 items-center justify-center" href="/">
@@ -27,9 +27,9 @@ async function Home() {
             </a>
 
 
-            <div className="flex flex-wrap gap-10   justify-center items-center mt-4">
+            <div className="flex flex-wrap gap-10  mx-10    justify-center items-center mt-4">
                 {data.map((item: any, i: number) =>
-                    <div className=" w-[600px] flex flex-wrap " key={i}>
+                    <div className="   flex flex-col flex-wrap items-center   mx-10 " key={i}>
                         <VideoPlayer video={item.link_m3u8} />
                         <p className="truncate w-44">{item.filename}</p>
 
