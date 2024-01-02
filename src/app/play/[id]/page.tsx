@@ -14,17 +14,17 @@ import VideoPlayer from '@/components/JwLoader/Jwplay';
 async function Home() {
     const headersList = headers();
 
-    const header_url = headersList.get('x-url') || "";
+    const header_url = headersList.get("x-pathname") || '';
+    const slugUrl = header_url.replace('/play/', '')
 
-    const slugUrl = header_url.replace('https://next-phim-fe.vercel.app/play/', '')
     let data = await getData(slugUrl);
-
+    console.log('slugUrlslugUrlslugUrl', data);
     return (
         <div className="flex flex-wrap gap-10 container justify-center items-center mt-4">
             {data.map((item: any, i: number) =>
                 <div key={i}>
                     <VideoPlayer video={item.link_m3u8} />
-                    <span>Tập: {slugUrl}</span>
+                    <span>Phim: {item.filename}</span>
                 </div>
             )}
 
