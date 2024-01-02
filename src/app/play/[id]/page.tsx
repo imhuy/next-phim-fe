@@ -31,7 +31,7 @@ async function Home() {
                 {data.map((item: any, i: number) =>
                     <div className="   flex flex-col flex-wrap items-center   mx-10 " key={i}>
                         <VideoPlayer video={item.link_m3u8} />
-                        <p className="truncate w-44">{item.filename}</p>
+                        <p className="">{item.filename}</p>
 
                     </div>
                 )}
