@@ -14,7 +14,7 @@ async function getData(slug: string) {
 import VideoPlayer from '@/components/JwLoader/Jwplay';
 async function Home() {
     const headersList = headers();
-    console.log('headersListheadersListheadersList', headersList);
+
     const header_url = headersList.get('x-url') || "";
 
     const slugUrl = header_url.replace('https://next-phim-fe.vercel.app/', '')
@@ -24,8 +24,8 @@ async function Home() {
         <div className="flex flex-wrap gap-10 container justify-center items-center mt-4">
             {data.map((item: any, i: number) =>
                 <div key={i}>
-                    <VideoPlayer video={item.link_m3u8} />
-                    <span>Tập: {item.name}</span>
+                    {/* <VideoPlayer video={item.link_m3u8} /> */}
+                    <span>Tập: {slugUrl}</span>
                 </div>
             )}
 
