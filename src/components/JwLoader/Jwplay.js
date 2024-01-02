@@ -8,7 +8,7 @@ const VideoPlayer = ({ video }) => {
  
     useEffect(() => {
         if (playerRef.current && typeof window !== "undefined") {
-            console.log('windowwindowwindow', window);
+            console.log('windowwindowwindow', window.jwplayer);
             window.jwplayer(playerRef.current).setup({
                 sources: [{ file: video, type: 'hls' }],
                 autostart: 'false',
