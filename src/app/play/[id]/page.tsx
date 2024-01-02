@@ -17,7 +17,7 @@ async function Home() {
     console.log('headersListheadersListheadersList', headersList);
     const header_url = headersList.get('x-url') || "";
 
-    const slugUrl = header_url.replace('http://localhost:3000/play/', '')
+    const slugUrl = header_url.replace('https://next-phim-fe.vercel.app/', '')
     let data = await getData(slugUrl);
 
     return (
