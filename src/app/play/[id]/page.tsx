@@ -20,15 +20,23 @@ async function Home() {
     let data = await getData(slugUrl);
     console.log('slugUrlslugUrlslugUrl', data);
     return (
-        <div className="flex flex-wrap gap-10 container justify-center items-center mt-4">
-            {data.map((item: any, i: number) =>
-                <div key={i}>
-                    <VideoPlayer video={item.link_m3u8} />
-                    <span>Phim: {item.filename}</span>
-                </div>
-            )}
+        <main className=" container">
+            <a className="flex flex-1 items-center justify-center" href="/">
 
-        </div>
+                <h1 className="ml-10 text-2xl font-semibold mt-4 hover:text-green-600"> Trang chủ</h1>
+            </a>
+
+
+            <div className="flex flex-wrap gap-10   justify-center items-center mt-4">
+                {data.map((item: any, i: number) =>
+                    <div className=" w-[600px] flex flex-wrap " key={i}>
+                        <VideoPlayer video={item.link_m3u8} />
+                        <p className="truncate w-44">{item.filename}</p>
+
+                    </div>
+                )}
+            </div>
+        </main>
     )
 }
 export default Home;

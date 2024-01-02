@@ -20,7 +20,7 @@ const VideoPlayer = ({ video }) => {
                     playbackRateControls: 'true',
                     stretching: 'fill'
                 });
-            }, 1000);
+            }, 0);
 
         }
     }, [video]);
