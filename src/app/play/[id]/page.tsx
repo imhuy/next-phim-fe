@@ -17,12 +17,17 @@ async function Home() {
 
     const header_url = headersList.get('x-url') || "";
 
-    const slugUrl = header_url.replace('https://next-phim-fe.vercel.app/', '')
-    // let data = await getData(slugUrl);
+    const slugUrl = header_url.replace('https://next-phim-fe.vercel.app/play/', '')
+    let data = await getData(slugUrl);
 
     return (
         <div className="flex flex-wrap gap-10 container justify-center items-center mt-4">
-            {slugUrl}
+            {data.map((item: any, i: number) =>
+                <div key={i}>
+                    <VideoPlayer video={item.link_m3u8} />
+                    <span>Tập: {slugUrl}</span>
+                </div>
+            )}
 
         </div>
     )
