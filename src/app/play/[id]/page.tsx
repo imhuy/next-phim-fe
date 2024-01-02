@@ -7,7 +7,6 @@ async function getData(slug: string) {
     if (!res.ok) {
         throw new Error('Failed to fetch data')
     }
-
     return data?.episodes[0].server_data
 }
 
@@ -24,7 +23,7 @@ async function Home() {
         <div className="flex flex-wrap gap-10 container justify-center items-center mt-4">
             {data.map((item: any, i: number) =>
                 <div key={i}>
-                    <VideoPlayer video={item.link_m3u8} />
+                    {/* <VideoPlayer video={item.link_m3u8} /> */}
                     <span>Tập: {slugUrl}</span>
                 </div>
             )}
