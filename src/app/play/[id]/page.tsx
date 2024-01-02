@@ -18,7 +18,7 @@ async function Home() {
     const slugUrl = header_url.replace('/play/', '')
 
     let data = await getData(slugUrl);
-    console.log('slugUrlslugUrlslugUrl', data);
+   
     return (
         <main className=" container">
             <a className="flex flex-1 items-center justify-center" href="/">
