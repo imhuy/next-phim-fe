@@ -6,7 +6,7 @@ const nextConfig = {
     images: {
         domains: [
             "img.ophim1.com",
-
+            "img.ophim10.cc"
         ],
     }
 }
