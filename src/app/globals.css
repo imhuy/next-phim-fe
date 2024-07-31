@@ -16,4 +16,34 @@
   }
 }
 
- 
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: gray;
+  text-align: center;
+  /* padding: 14px; */
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(55, 56, 61);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(80, 80, 80);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

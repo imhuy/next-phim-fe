@@ -25,16 +25,13 @@ async function Home() {
   console.log("moviemoviemovie", movie.thumb_url);
 
   return (
-    <div className="   mx-auto bg-[#424040]  ">
-      <div className=" container mx-auto   shadow-2xl bg-[#171717]">
-        <div className=" grid grid-cols-12">
-          <div className=" col-span-9  ">
-            <div className=" flex  flex-col ">
-              <a className="flex items-center justify-center" href="/">
-                <h1 className="  text-2xl font-semibold mt-4 hover:text-green-600">
-                  {" "}
-                  Trang chủ
-                </h1>
+    <div className='   mx-auto bg-[#424040]  '>
+      <div className=' container mx-auto   shadow-2xl bg-[#171717]'>
+        <div className=' grid grid-cols-12'>
+          <div className=' col-span-9  '>
+            <div className=' flex  flex-col '>
+              <a className='flex items-center justify-center' href='/'>
+                <h1 className='  text-2xl font-semibold mt-4 hover:text-green-600'> Trang chủ</h1>
               </a>
 
               {/* <Image
@@ -48,24 +45,18 @@ async function Home() {
                 }}
                 src={`${movie.thumb_url}`}
               ></Image> */}
-              <div className=" flex   flex-row  flex-wrap  gap-x-4 gap-y-4  ">
+              <div className=' flex   flex-row  flex-wrap  gap-x-4 gap-y-4  '>
                 {episodes.map((item: any, i: number) => (
-                  <div
-                    className=" flex  hover:bg-[#007E59] bg-[#666666] rounded-md"
-                    key={i}
-                  >
-                    {/* <VideoPlayer video={item.link_m3u8} /> */}
-                    <p className=" text-white px-2 py-1 font-semibold">
-                      Tập {item.name}
-                    </p>
+                  <div className=' flex  hover:bg-[#007E59] bg-[#666666] rounded-md' key={i}>
+                    <VideoPlayer video={item.link_m3u8} />
+                    <p className=' text-white px-2 py-1 font-semibold'>Tập {item.name}</p>
                   </div>
                 ))}
               </div>
-              
             </div>
           </div>
 
-          <div className=" col-span-3"></div>
+          <div className=' col-span-3'></div>
         </div>
       </div>
     </div>
