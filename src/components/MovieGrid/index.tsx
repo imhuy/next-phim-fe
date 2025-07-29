@@ -76,6 +76,7 @@ const MovieGrid: React.FC<MovieGridProps> = ({ movies, title }) => {
                 {/* Image chỉ load khi visible */}
                 {visibleItems.has(i) && (
                   <ImageProxy
+                    quality={10}
                     className="w-full h-full object-cover group-hover/item:scale-110 transition-transform duration-300"
                     alt={item.name}
                     src={item.thumb_url}

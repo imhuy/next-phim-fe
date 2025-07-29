@@ -84,6 +84,8 @@ export default async function Home({ params }: { params: { id: string } }) {
           <div className="flex relative w-full z-10">
             <div className="relative w-full h-full overflow-hidden">
               <ImageProxy
+                priority={true}
+                quality={10}
                 width={1024}
                 height={1025}
                 src={movie.poster_url}

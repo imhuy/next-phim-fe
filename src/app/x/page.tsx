@@ -179,6 +179,7 @@ function Home() {
                   <div className="flex w-[95%]  items-center   gap-x-4">
                     <div className="flex flex-col w-full  text-white font-semibold hover:text-green-500">
                       <Image
+                      
                         alt="img"
                         className=" object-cover hover:scale-105 transition duration-300 ease-in-out w-full h-80  drop-shadow-xl"
                         // sizes="(max-width: 640px) 100vw, (max-width: 1200px) 40vw, 60vw"
