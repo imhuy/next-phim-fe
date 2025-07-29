@@ -12,6 +12,8 @@ export default async function Home() {
 
       {/* ... rest of content ... */}
       <MovieGrid movies={movieUpcoming} title="Phim đang chiếu" />
+
+      <MovieGrid movies={movieUpcoming} title="Phim đang chiếu" />    
     </main>
   );
 }
