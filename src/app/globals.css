@@ -21,6 +21,13 @@ div.scrollmenu {
   white-space: nowrap;
 }
 
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
 div.scrollmenu a {
   display: inline-block;
   color: gray;

@@ -24,7 +24,7 @@ function Home() {
 
           <div className='flex-1  scrollmenu    h-[700px] '>
             {film.map((item, index) => (
-              <div className='flex  hover:text-green-500 p-2   hover:bg-[#23252b] bg-[#1A1C21]   py-2   items-center  '>
+              <div key={index} className='flex  hover:text-green-500 p-2   hover:bg-[#23252b] bg-[#1A1C21]   py-2   items-center  '>
                 <img src='/imageRight.jpg' className='w-[40%]  rounded-md ' alt='' />
                 <span className=' text-xs '>Tam tuyến luân hồi</span>
               </div>
