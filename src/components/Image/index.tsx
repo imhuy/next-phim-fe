@@ -140,7 +140,7 @@ const ImageProxy: React.FC<ImageProps> = ({
       {/* Blur placeholder - chỉ hiển thị khi cần */}
       {placeholder === "blur" && !imageLoaded && !hasError && (
         <div 
-          className="absolute inset-0 bg-gray-200 animate-pulse"
+          className="absolute inset-0 bg-black animate-pulse"
           style={{
             backgroundImage: `url(${memoizedBlurDataURL})`,
             backgroundSize: 'cover',
@@ -152,7 +152,7 @@ const ImageProxy: React.FC<ImageProps> = ({
 
       {/* Loading spinner - chỉ hiển thị cho ảnh priority */}
       {isLoading && priority && (
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-100 z-10">
+        <div className="absolute inset-0 flex items-center justify-center bg-black z-10">
           <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-gray-900"></div>
         </div>
       )}
