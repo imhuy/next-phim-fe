@@ -139,13 +139,13 @@ const ImageProxy: React.FC<ImageProps> = ({
     <div className={`relative ${className}`} style={style}>
       {/* Blur placeholder - chỉ hiển thị khi cần */}
       {placeholder === "blur" && !imageLoaded && !hasError && (
-        <div 
+        <div
           className="absolute inset-0 bg-black animate-pulse"
           style={{
             backgroundImage: `url(${memoizedBlurDataURL})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'blur(10px)',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            filter: "blur(10px)",
           }}
         />
       )}

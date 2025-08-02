@@ -32,12 +32,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ featuredMovies }) => {
   return (
     <main className="  bg-black pb-4">
       <div>
-        <div>
-          <p className="text-white border-b border-gray-800 pt-4 pb-2 mx-4 font-black font-sans text-2xl">
-            Horror Series
-          </p>
-        </div>
-
         {/* content */}
         <div className="flex w-full max-sm:flex-col-reverse text-sm text-white">
           <div className="w-full px-4 mt-10 h-full relative text-white z-50 flex gap-8">
